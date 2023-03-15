@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Descobrindo Nacionalidades</h1>
+     Qual o seu país? <input type="text" name="txtn" id="txtn"> 
+     <input type="button" value="Verificar" onclick="verificar()">
+     <div id="res">
+
+     </div>
+
+    <script>
+        function verificar(){
+            var pais =  window.document.getElementById(`txtn`)
+            var res = window.document.getElementById(`res`)
+            
+
+            if(pais=='Brasil'){
+                res.innerHTML += `Voce é BRASILEIRO!`
+            } else{
+                res.innerHTML += `Voce é ESTRANGEIRO!`
+            } 
+            
+            
+
+            res.innerHTML += '<p>Não importa a nacionalidade; o importante é ser feliz!</p>'
+
+        }
+    </script>
+</body>
+</html>
